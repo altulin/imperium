@@ -1,0 +1,8 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.promo {
+  &__main_title {
+    @include m.vh();
+  }
+}

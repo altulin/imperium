@@ -1,0 +1,70 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.press {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #fff;
+
+  cursor: pointer;
+  border-radius: 0.62rem;
+  transition: 0.3s;
+  border: var(--line) solid green;
+  flex-shrink: 0;
+
+  backdrop-filter: blur(5px);
+  box-shadow:
+    inset 0 1px 2px 0 rgba(239, 232, 232, 0.6),
+    inset 0 -4px 12px 0 rgba(0, 0, 0, 0.22);
+  background: linear-gradient(0deg, #2c90f7 0%, #05c0cc 100%);
+
+  &--exit {
+    padding: 0.6rem 1.6rem;
+  }
+
+  &--default {
+    padding: 1.1rem 4rem;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: var(--main-blue);
+
+    svg {
+      fill: var(--main-blue);
+    }
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+
+  &__icon {
+    width: 0.9rem;
+    height: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      fill: #fff;
+      transition: 0.3s;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 0.94rem;
+    line-height: 167%;
+    color: var(--white-);
+  }
+}

@@ -13,7 +13,10 @@ html {
   box-sizing: border-box;
 
   font-size: 16px;
-  // font-size: 0.83vw;
+
+  @media screen and (max-width: 1920px) {
+    font-size: 0.83vw;
+  }
 
   @include m.mw(v.$ldt) {
     font-size: 1.1vw;
@@ -36,7 +39,7 @@ body {
   scroll-behavior: smooth;
   @include m.font("SFProText");
   color: v.$text-dark;
-  background-color: v.$bg;
+  background-color: #1b1b20;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,6 +73,7 @@ img {
   flex-grow: 1;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 a {
@@ -145,7 +149,6 @@ input:-webkit-autofill:active {
   margin-left: auto;
   padding-right: v.$gap;
   padding-left: v.$gap;
-  // max-width: $width-dt + $gap * 2;
   width: 80%;
   max-width: 1600px;
 
