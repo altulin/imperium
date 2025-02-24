@@ -149,8 +149,8 @@ input:-webkit-autofill:active {
   margin-left: auto;
   padding-right: v.$gap;
   padding-left: v.$gap;
-  width: 80%;
-  max-width: 1600px;
+  // width: 80%;
+  max-width: 1250px;
 
   @include m.mw(v.$ldt) {
     width: 95%;

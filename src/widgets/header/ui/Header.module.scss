@@ -2,6 +2,10 @@
 @use "@/shared/sass/mixins.scss" as m;
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -38,7 +42,7 @@
   &__list {
     display: flex;
     align-items: center;
-    column-gap: 1.6rem;
+    column-gap: 1.95rem;
 
     @include m.mw(v.$tb) {
       flex-direction: column;

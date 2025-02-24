@@ -3,4 +3,5 @@ export enum HeaderLinks {
   PUBLIC = "public_trading",
   INCOME = "income_and_security",
   FEEDBACK = "feedback",
+  TG = "tg",
 }

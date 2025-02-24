@@ -10,8 +10,8 @@ export interface ITitle {
 
 const Title: FC<ITitle> = ({ label, className, text }) => {
   return (
-    <div className={clsx(style.title)}>
-      <h2 className={clsx(style.title__text, className)}>
+    <div className={clsx(style.title, className)}>
+      <h2 className={clsx(style.title__text)}>
         {Array.isArray(label)
           ? label.map((item, i: number) => <span key={i}>{item}</span>)
           : label}

@@ -27,33 +27,40 @@ const Promo: FC = () => {
         <div className={clsx(style.info)}>
           <div className={clsx(style.info__inner)}>
             <Title {...TitleProps} />
-            <PressBtn label="Создать аккаунт" modifier="default" />
+            <PressBtn
+              label="Создать аккаунт"
+              modifier="default"
+              class_name={clsx(style.info__btn)}
+            />
           </div>
         </div>
-        <figure className={clsx(style.figure)}>
-          <picture>
-            {/* <source
+
+        <div className={clsx(style.image)}>
+          <figure className={clsx(style.image__figure)}>
+            <picture>
+              {/* <source
           media="(max-width: 768px)"
           type="image/png"
           srcSet="/img/location-768.png"
         /> */}
-            <source
-              type="image/webp"
-              srcSet={`${promoImgWebp} 1x, ${promoImgWebp2} 2x`}
-            />
-            <source
-              type="image/png"
-              srcSet={`${promoImg} 1x, ${promoImg2} 2x`}
-            />
-            <img
-              className={clsx(style.bg__img)}
-              src={promoImg}
-              alt="img"
-              width="985"
-              height="830"
-            />
-          </picture>
-        </figure>
+              <source
+                type="image/webp"
+                srcSet={`${promoImgWebp} 1x, ${promoImgWebp2} 2x`}
+              />
+              <source
+                type="image/png"
+                srcSet={`${promoImg} 1x, ${promoImg2} 2x`}
+              />
+              <img
+                className={clsx(style.image__img)}
+                src={promoImg}
+                alt="img"
+                width="985"
+                height="830"
+              />
+            </picture>
+          </figure>
+        </div>
       </div>
     </section>
   );

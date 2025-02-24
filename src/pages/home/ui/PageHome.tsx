@@ -1,12 +1,18 @@
 import { FC } from "react";
 import Promo from "./promo/Promo";
-import Slider from "./slider/Slider";
+import Passive from "./passive/Passive";
+import Public from "./public/ui/Public";
+import clsx from "clsx";
+import style from "./PageHome.module.scss";
 
 const PageHome: FC = () => {
   return (
     <>
       <Promo />;
-      <Slider />
+      <div className={clsx(style.content)}>
+        <Passive />
+        <Public />
+      </div>
     </>
   );
 };
