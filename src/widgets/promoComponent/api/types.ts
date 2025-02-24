@@ -7,7 +7,10 @@ export interface IPromoComponent {
   title: ITitle;
   info: IInfo[];
   subtitle: string;
-  how: ICardHow[];
+  how: { cardList: ICardHow[] };
+  instruction: {
+    title: string;
+  };
 }
 
 export interface IInfo {
@@ -18,8 +21,9 @@ export interface IInfo {
 }
 
 export interface ICardHow {
-  title: string;
-  text: string;
-  id: HeaderLinks;
-  idSvg?: number;
+  title?: string;
+  text?: string;
+  svg?: string;
+  id?: HeaderLinks;
+  isArrow?: boolean;
 }

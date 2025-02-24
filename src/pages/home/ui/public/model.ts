@@ -3,6 +3,10 @@ import { HeaderLinks } from "@/shared/appTypes";
 import img1 from "@/shared/images/passive/hands.png";
 import img2 from "@/shared/images/passive/list.png";
 
+import svg_0 from "@/shared/images/sprite/public_0.svg";
+import svg_1 from "@/shared/images/sprite/public_1.svg";
+import svg_2 from "@/shared/images/sprite/public_2.svg";
+
 export const propsPublic: IPromoComponent = {
   id: HeaderLinks.PUBLIC,
 
@@ -29,18 +33,29 @@ export const propsPublic: IPromoComponent = {
     },
   ],
   subtitle: "Как это работает",
-  how: [
-    {
-      title: "Зарегистрируйся на нашем сайте",
-      text: "Создай канал и подключи API от своей биржи",
-    },
-    {
-      title: "Просто продолжай торговать на своей бирже",
-      text: "Мы соберем статистику по всем сделкам и выведем результаты в списке трейдеров",
-    },
-    {
-      title: "Стань одним из лучших трейдеров",
-      text: " и собирай платных подписчиков со всего мира",
-    },
-  ],
+  how: {
+    cardList: [
+      {
+        title: "Зарегистрируйся на нашем сайте",
+        text: "Создай канал и подключи API от своей биржи",
+        svg: svg_0,
+      },
+      { isArrow: true },
+      {
+        title: "Просто продолжай торговать на своей бирже",
+        text: "Мы соберем статистику по всем сделкам и выведем результаты в списке трейдеров",
+        svg: svg_1,
+      },
+      { isArrow: true },
+      {
+        title: "Стань одним из лучших трейдеров",
+        text: " и собирай платных подписчиков со всего мира",
+        svg: svg_2,
+      },
+    ],
+  },
+
+  instruction: {
+    title: "Полная инструкция по публичному трейдингу",
+  },
 };

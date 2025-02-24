@@ -1,0 +1,41 @@
+.component {
+  margin-top: 7.5rem;
+  margin-bottom: 6.25rem;
+
+  &__title {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+.content {
+  display: flex;
+  column-gap: 3.25rem;
+  align-items: flex-start;
+
+  &__figure {
+    aspect-ratio: 1 / 1.3;
+    width: 45%;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.125rem;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3.125rem;
+  }
+}

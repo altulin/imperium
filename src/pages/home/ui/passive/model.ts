@@ -3,6 +3,10 @@ import { HeaderLinks } from "@/shared/appTypes";
 import img1 from "@/shared/images/public/pig.png";
 import img2 from "@/shared/images/public/graf.png";
 
+import svg_0 from "@/shared/images/sprite/passive_0.svg";
+import svg_1 from "@/shared/images/sprite/passive_1.svg";
+import svg_2 from "@/shared/images/sprite/passive_2.svg";
+
 export const propsPassive: IPromoComponent = {
   id: HeaderLinks.PASSIVE,
 
@@ -27,18 +31,29 @@ export const propsPassive: IPromoComponent = {
   ],
   subtitle: "Как это работает",
 
-  how: [
-    {
-      title: "Зарегистрируйтесь",
-      text: "на бирже Binance и на нашем сайте",
-    },
-    {
-      title: "Пополните ваш депозит на Binance",
-      text: "и подпишитесь на лучшего трейдера в нашем сервисе",
-    },
-    {
-      title: "Займитесь чем-нибудь полезным",
-      text: "пока профессиональные трейдеры зарабатывают вам деньги",
-    },
-  ],
+  how: {
+    cardList: [
+      {
+        title: "Зарегистрируйтесь",
+        text: "на бирже Binance и на нашем сайте",
+        svg: svg_0,
+      },
+      { isArrow: true },
+      {
+        title: "Пополните ваш депозит на Binance",
+        text: "и подпишитесь на лучшего трейдера в нашем сервисе",
+        svg: svg_1,
+      },
+      { isArrow: true },
+      {
+        title: "Займитесь чем-нибудь полезным",
+        text: "пока профессиональные трейдеры зарабатывают вам деньги",
+        svg: svg_2,
+      },
+    ],
+  },
+
+  instruction: {
+    title: "Полная инструкция по публичному трейдингу",
+  },
 };
