@@ -23,18 +23,20 @@ const TgTrading: FC = () => {
         />
 
         <div className={clsx(style.content)}>
-          <figure className={clsx(style.content__figure)}>
-            <picture>
-              <source type="image/webp" srcSet={imgWebp} />
-              <img
-                className={clsx(style.bg__img)}
-                src={img}
-                alt="location"
-                width="440"
-                height="577"
-              />
-            </picture>
-          </figure>
+          <div className={clsx(style.content__ui)}>
+            <figure className={clsx(style.content__figure)}>
+              <picture>
+                <source type="image/webp" srcSet={imgWebp} />
+                <img
+                  className={clsx(style.bg__img)}
+                  src={img}
+                  alt="location"
+                  width="440"
+                  height="577"
+                />
+              </picture>
+            </figure>
+          </div>
 
           <div className={clsx(style.content__right)}>
             <ul className={clsx(style.content__list)}>

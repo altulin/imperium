@@ -11,7 +11,9 @@ const CardHow: FC<ICardHow> = ({ title, text, svg, id }) => {
 
   return (
     <li className={clsx(style.card, isTg && style["card--tg"])}>
-      <figure className={clsx(style.card__figure)}>
+      <figure
+        className={clsx(style.card__figure, isTg && style["card__figure--tg"])}
+      >
         <span
           className={clsx(
             style.card__circle,
@@ -28,8 +30,13 @@ const CardHow: FC<ICardHow> = ({ title, text, svg, id }) => {
         </div>
       </figure>
 
-      <h4 className={clsx(style.card__title)}>{title}</h4>
-      <p className={clsx(style.card__text)}>{text}</p>
+      <h4 className={clsx(style.card__title, isTg && style["card__title--tg"])}>
+        {title}
+      </h4>
+
+      <p className={clsx(style.card__text, isTg && style["card__text--tg"])}>
+        {text}
+      </p>
     </li>
   );
 };

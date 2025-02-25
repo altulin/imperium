@@ -4,6 +4,7 @@ import { FC } from "react";
 import { Outlet } from "react-router";
 import style from "./BaseLayout.module.scss";
 import BackGround from "./BackGround";
+import Footer from "@/widgets/footer/Footer";
 
 export const BaseLayout: FC = () => {
   return (
@@ -13,6 +14,7 @@ export const BaseLayout: FC = () => {
       <main className={clsx(style.main)}>
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

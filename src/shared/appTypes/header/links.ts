@@ -5,3 +5,10 @@ export enum HeaderLinks {
   FEEDBACK = "feedback",
   TG = "tg",
 }
+
+export enum HeaderLinkNames {
+  PASSIVE = "Пассивный заработок",
+  PUBLIC = "Публичный трейдинг",
+  INCOME = "Доходы и безопасность",
+  FEEDBACK = "Обратная связь",
+}

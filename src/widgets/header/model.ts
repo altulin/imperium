@@ -1,4 +1,5 @@
 import { HeaderLinks } from "@/shared/appTypes";
+import { HeaderLinkNames } from "@/shared/appTypes/header/links";
 
 interface ILink {
   label: string;
@@ -8,22 +9,22 @@ interface ILink {
 
 export const links: ILink[] = [
   {
-    label: "Пассивный заработок",
+    label: HeaderLinkNames.PASSIVE,
     link: HeaderLinks.PASSIVE,
     isAnchor: true,
   },
   {
-    label: "Публичный трейдинг",
+    label: HeaderLinkNames.PUBLIC,
     link: HeaderLinks.PUBLIC,
     isAnchor: true,
   },
   {
-    label: "Доходы и безопасность",
+    label: HeaderLinkNames.INCOME,
     link: HeaderLinks.INCOME,
     isAnchor: false,
   },
   {
-    label: "Обратная связь",
+    label: HeaderLinkNames.FEEDBACK,
     link: HeaderLinks.FEEDBACK,
     isAnchor: false,
   },

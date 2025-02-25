@@ -1,0 +1,38 @@
+.footer {
+  background-color: #171b2d;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.6rem;
+    padding-bottom: 4.6rem;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--white-);
+    max-width: 17rem;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__policy {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 0.81rem;
+    color: var(--white-);
+  }
+}

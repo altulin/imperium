@@ -67,14 +67,24 @@ const PromoComponent: FC<IPromoComponent> = (props) => {
 
           <div className={clsx(style.instruction)}>
             <SubTitle label={instructionTitle} />
-            <iframe
-              src="https://vk.com/video_ext.php?oid=61404916&id=456239859&hd=2&autoplay=0"
-              width="853"
-              height="480"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
-              style={{ borderRadius: "1.25rem", border: "none", width: "100%" }}
-              allowFullScreen
-            ></iframe>
+            <div className={clsx(style.instruction__video)}>
+              <iframe
+                src="https://vk.com/video_ext.php?oid=61404916&id=456239859&autoplay=0"
+                width="853"
+                height="480"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                style={{
+                  borderRadius: "1.25rem",
+                  border: "none",
+                  width: "100%",
+                  position: "absolute",
+                  height: "100%",
+                  left: "0",
+                  top: "0",
+                }}
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

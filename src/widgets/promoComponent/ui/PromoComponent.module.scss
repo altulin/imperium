@@ -119,6 +119,7 @@
   &--tg {
     width: auto;
     background-color: #1f2c3d;
+    padding-bottom: 1.5rem;
   }
 
   &__figure {
@@ -129,6 +130,10 @@
     svg {
       aspect-ratio: 1 / 1;
       width: 2.25rem;
+    }
+
+    &--tg {
+      margin-bottom: 1.8rem;
     }
   }
 
@@ -181,6 +186,12 @@
     text-align: center;
     color: var(--white-);
     margin-bottom: 0.875rem;
+
+    &--tg {
+      font-size: 1.25rem;
+      line-height: 130%;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__text {
@@ -191,5 +202,18 @@
     text-align: center;
     color: var(--white-);
     min-height: 3.7rem;
+
+    &--tg {
+      font-size: 1rem;
+      line-height: 170%;
+    }
+  }
+}
+
+.instruction {
+  &__video {
+    position: relative;
+    width: 100%;
+    padding-top: 57%;
   }
 }
